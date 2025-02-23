@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message for Her</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff7eb3, #ffe0e9, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            position: relative;
+            padding: 20px;
+        }
+        .design-lines::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            width: 90%;
+            height: 80%;
+            border: 5px solid lilac;
+            border-radius: 20px;
+        }
+        .message-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            height: 60vh;
+            overflow-y: auto;
+            text-align: center;
+            color: emerald;
+            font-size: 1.2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="design-lines">
+    <audio autoplay loop>
+        <source src="paste your path here" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="message-box">
+        <p>Your long message goes here...</p>
+    </div>
+</body>
+</html>

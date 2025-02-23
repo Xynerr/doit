@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Her</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff7eb3, #ffe0e9, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            position: relative;
+            text-align: center;
+        }
+        .design-lines::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            width: 90%;
+            height: 80%;
+            border: 5px solid lilac;
+            border-radius: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            animation: bounce 1.5s infinite;
+            text-decoration: none;
+        }
+        .button:hover {
+            background: linear-gradient(45deg, #2575fc, #6a11cb);
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .corner-message {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body class="design-lines">
+    <div class="corner-message">A special message just for you :)</div>
+    <h1>Want to know Something Makad</h1>
+    <a href="message.html" class="button">Bol Bindok</a>
+</body>
+</html>
